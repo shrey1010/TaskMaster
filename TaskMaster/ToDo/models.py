@@ -14,16 +14,9 @@ class TODO(models.Model):
         ('P', 'PENDING'),
     ]
     priority_choices = [
-        ('1', '1️⃣'),
-        ('2', '2️⃣'),
-        ('3', '3️⃣'),
-        ('4', '4️⃣'),
-        ('5', '5️⃣'),
-        ('6', '6️⃣'),
-        ('7', '7️⃣'),
-        ('8', '8️⃣'),
-        ('9', '9️⃣'),
-        ('10', '🔟'),
+        ('1', 'High'),
+        ('2', 'Medium'),
+        ('3', 'Low'),
     ]
     title = models.CharField(max_length=50)
     status = models.CharField(max_length=2, choices=status_choices)
